@@ -14,5 +14,5 @@ urllib3==1.26.8
 
 
 
-r
+
 whitenoise==6.2.0
