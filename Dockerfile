@@ -14,6 +14,7 @@ WORKDIR /app
 # install dependencies
 COPY ./requirements.txt .
 RUN pip install --upgrade pip
+RUN  apk add libffi-dev
 RUN pip install -r requirements.txt
 
 # copy project
