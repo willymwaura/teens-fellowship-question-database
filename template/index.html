@@ -1,0 +1,27 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href= "{% static 'app.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyacaba Teens Fellowship Database</title>
+</head>
+<body>
+    <div class='app'>
+        <h1>Nyacaba Teens Fellowship Database</h1>
+        <p>ask any questions anonymously </p>
+    </div>
+    <div class="container">
+    <form method='POST'action='search' enctype="multipart/form-data">
+        {%csrf_token%}
+        <textarea  placeholder="enter your questions here" name="tex" >
+
+        </textarea>
+        
+        <button class="search">submit</button>
+     </form>
+    </div>
+</body>
+</html>

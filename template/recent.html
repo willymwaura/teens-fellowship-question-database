@@ -1,0 +1,20 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href= "{% static 'app.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all question in the database</title>
+</head>
+<body>
+
+    {%for instance in value reversed%}
+    <ul>
+    <li>{{instance.question}}</li>
+    <li>{{instance.date}}</li>
+</ul>
+    {% endfor %}
+</body>
+</html>
