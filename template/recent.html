@@ -11,9 +11,11 @@
 <body>
 
     {%for instance in value reversed%}
+    <div class="test">
     <ul>
-    <li>{{instance.question}}</li>
-    <li>{{instance.date}}</li>
+    <li style="color: white;">{{instance.question}}</li>
+    <li style="color: white;">{{instance.date}}</li>
+    </div>
 </ul>
     {% endfor %}
 </body>
